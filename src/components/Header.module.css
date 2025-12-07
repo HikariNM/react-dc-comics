@@ -1,0 +1,28 @@
+.container {
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+img {
+    width: 80px;
+}
+
+a:hover {
+    color: dodgerblue;
+}
