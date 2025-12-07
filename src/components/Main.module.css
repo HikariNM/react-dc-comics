@@ -1,0 +1,11 @@
+main {
+    color: white;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
