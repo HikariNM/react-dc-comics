@@ -1,0 +1,84 @@
+.container {
+    background-color: #0282F9;
+}
+
+footer {
+    color: white;
+    background-color: #303030;
+    margin-bottom: 30px;
+}
+
+/********** FOOTER SHOP ************/
+.shopLink {
+    margin: 0 auto;
+    width: 70%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopLink img {
+    width: 40px;
+}
+
+.shopLink li {
+    display: flex;
+    gap: 1rem;
+}
+
+.shopLink span {
+    display: flex;
+    align-items: center;
+
+}
+
+/*************FOOTER NAV*************/
+
+.footerNavLink {
+    height: 400px;
+    background-image: url('./src/assets/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+/*************FOOTER SOCIAL********/
+.footerContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+}
+
+.LeftColumn {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.LeftColumn button {
+    font-weight: 600;
+    color: white;
+    background: none;
+    padding: 15px;
+    border-color: #027ED2;
+    font-size: 1.1em;
+}
+
+.footerSocial h3 {
+    color: #027ED2;
+}
+
+.footerSocial {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    justify-content: flex-end;
+}
+
+.footerSocial li {
+    padding: 0 10px;
+
+}
