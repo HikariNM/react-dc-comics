@@ -9,23 +9,23 @@ function Footer() {
                     <ul className={style.shopLink}>
                         <li>
                             <img src="./src/assets/buy-comics-digital-comics.png" alt="" />
-                            <span> DIGITAL COMICS </span>
+                            <a href="#"> DIGITAL COMICS </a>
                         </li>
                         <li>
                             <img src="./src/assets/buy-comics-merchandise.png" alt="" />
-                            <span> DC MERCHANDISE </span>
+                            <a href="#"> DC MERCHANDISE </a>
                         </li>
                         <li>
                             <img src="./src/assets/buy-comics-subscriptions.png" alt="" />
-                            <span> SUBSCIPTION </span>
+                            <a href="#"> SUBSCIPTION </a>
                         </li>
                         <li>
                             <img src="./src/assets/buy-comics-shop-locator.png" alt="" />
-                            <span> COMIC SHOP LOCATOR </span>
+                            <a href="#"> COMIC SHOP LOCATOR </a>
                         </li>
                         <li>
                             <img src="./src/assets/buy-dc-power-visa.svg" alt="" />
-                            <span> DC POWER VISA </span>
+                            <a href="#"> DC POWER VISA </a>
                         </li>
 
                     </ul>
@@ -36,7 +36,7 @@ function Footer() {
                 <div className={style.footerContainer}>
 
                     <div className={style.LeftColumn}>
-                        <button>SIGN-UP NOW!</button>
+                        <a href="#"><span>SIGN-UP NOW!</span></a>
                     </div>
 
                     <ul className={style.footerSocial}>
@@ -44,19 +44,19 @@ function Footer() {
                             <h3>FOLLOW US</h3>
                         </li>
                         <li>
-                            <img src="./src/assets/footer-facebook.png" alt="" />
+                            <a href="#"><img src="./src/assets/footer-facebook.png" alt="" /></a>
                         </li>
                         <li>
-                            <img src="./src/assets/footer-twitter.png" alt="" />
+                            <a href="#"><img src="./src/assets/footer-twitter.png" alt="" /></a>
                         </li>
                         <li>
-                            <img src="./src/assets/footer-youtube.png" alt="" />
+                            <a href="#"><img src="./src/assets/footer-youtube.png" alt="" /></a>
                         </li>
                         <li>
-                            <img src="./src/assets/footer-pinterest.png" alt="" />
+                            <a href="#"><img src="./src/assets/footer-pinterest.png" alt="" /></a>
                         </li>
                         <li>
-                            <img src="./src/assets/footer-periscope.png" alt="" />
+                            <a href="#"><img src="./src/assets/footer-periscope.png" alt="" /></a>
                         </li>
                     </ul>
                 </div>

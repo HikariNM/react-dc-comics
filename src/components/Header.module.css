@@ -1,6 +1,6 @@
 .header {
     margin-top: 30px;
-    height: 120px;
+    /* height: 120px; */
     display: flex;
     align-items: center;
     background-color: white;
@@ -14,12 +14,22 @@
     align-items: center;
 }
 
+.header img {
+    width: 80px;
+}
+
 .header ul {
     font-weight: 600;
     display: flex;
     gap: 2rem;
 }
 
-.header img {
-    width: 80px;
+.header li {
+    font-size: 14px;
+    padding: 50px 0;
+    border-bottom: 5px solid transparent;
+}
+
+.header li:hover {
+    border-bottom: 5px solid #0282F9;
 }

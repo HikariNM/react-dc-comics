@@ -7,7 +7,7 @@ function Header() {
         <>
             <header className={style.header}>
                 <nav className={style.container}>
-                    <img src={logo} alt="" />
+                    <a href="#"> <img src={logo} alt="" /></a>
                     <ul>
                         <li><a href="#">CHARACTERS</a></li>
                         <li><a href="#">COMICS</a></li>

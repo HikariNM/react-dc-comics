@@ -18,18 +18,23 @@ footer {
 }
 
 .shopLink img {
-    width: 40px;
+    width: 50px;
+    object-fit: contain;
+}
+
+.shopLink li:nth-last-child(2) img {
+    width: 35px;
 }
 
 .shopLink li {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
-.shopLink span {
+.shopLink a {
     display: flex;
     align-items: center;
-
+    color: white;
 }
 
 /*************FOOTER NAV*************/
@@ -58,12 +63,12 @@ footer {
     align-items: center;
 }
 
-.LeftColumn button {
+.LeftColumn span {
     font-weight: 600;
     color: white;
     background: none;
     padding: 15px;
-    border-color: #027ED2;
+    border: 3px solid #027ED2;
     font-size: 1.1em;
 }
 
