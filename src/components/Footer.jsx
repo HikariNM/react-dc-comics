@@ -30,8 +30,53 @@ function Footer() {
 
                     </ul>
                 </div>
-                <div className={style.footerNavLink}>
+                <div className={style.footerNavLinkContainer}>
+                    <div className={style.footerLogo}>
+                        <div className={style.leftNavLink}>
+                            <ul>
+                                <li><h3>DC COMICS</h3></li>
+                                <a href=""> <li>Characters</li></a>
+                                <a href=""> <li>Comics</li></a>
+                                <a href=""> <li>Movies</li></a>
+                                <a href=""> <li>TV</li></a>
+                                <a href=""> <li>Games</li></a>
+                                <a href=""> <li>Videos</li></a>
+                                <a href=""> <li>News</li></a>
+                            </ul>
+                            <ul>
+                                <li><h3>SHOP</h3></li>
+                                <a href=""> <li>Shop DC</li></a>
+                                <a href=""> <li>Shop DC Collectibles</li></a>
+                            </ul>
+                        </div>
+                        <div className={style.middleNavLink}>
+                            <ul>
+                                <li><h3>DC</h3></li>
+                                <a href=""> <li>Term Of Use</li></a>
+                                <a href=""> <li>Privacy policy (new)</li></a>
+                                <a href=""> <li>Ad Choices</li></a>
+                                <a href=""> <li>Adversiting</li></a>
+                                <a href=""> <li>Jobs</li></a>
+                                <a href=""> <li>Subscriptions</li></a>
+                                <a href=""> <li>Talent Workshops</li></a>
+                                <a href=""> <li>CPSC Certificates</li></a>
+                                <a href=""> <li>Ratings</li></a>
+                                <a href=""> <li>Shop Help</li></a>
+                                <a href=""> <li>Contact Us</li></a>
+                            </ul>
+                        </div>
+                        <div className={style.rightNavLink}>
+                            <ul>
+                                <li><h3>SITES</h3></li>
+                                <a href=""> <li>DC</li></a>
+                                <a href=""> <li>MAD Magazine</li></a>
+                                <a href=""> <li>DC Kids</li></a>
+                                <a href=""> <li>DC Universe</li></a>
+                                <a href=""> <li>DC Power Visa</li></a>
+                            </ul>
+                        </div>
 
+                    </div>
                 </div>
                 <div className={style.footerContainer}>
 

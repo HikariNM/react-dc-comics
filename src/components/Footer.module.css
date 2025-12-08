@@ -39,15 +39,50 @@ footer {
 
 /*************FOOTER NAV*************/
 
-.footerNavLink {
-    height: 400px;
+.footerNavLinkContainer {
+
     background-image: url('./src/assets/footer-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
+.footerLogo {
+    width: 70%;
+    margin: 0 auto;
+    background-image: url('../assets/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+}
 
+.footerLogo ul {
+    padding-bottom: 15px;
+}
 
+.footerLogo li {
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.footerLogo a {
+    color: #959588;
+}
+
+.footerLogo a:hover {
+    color: white;
+}
+
+.footerLogo h3 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.leftNavLink,
+.middleNavLink,
+.rightNavLink {
+    padding: 50px 0;
+    width: 12%;
+}
 
 /*************FOOTER SOCIAL********/
 .footerContainer {
