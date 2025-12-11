@@ -5,7 +5,7 @@ function Footer() {
     return (
         <>
             <footer>
-                <div className={style.container}>
+                {/* <div className={style.container}>
                     <ul className={style.shopLink}>
                         <li>
                             <img src="./src/assets/buy-comics-digital-comics.png" alt="" />
@@ -29,12 +29,12 @@ function Footer() {
                         </li>
 
                     </ul>
-                </div>
+                </div> */}
                 <div className={style.footerNavLinkContainer}>
                     <div className={style.footerLogo}>
                         <div className={style.leftNavLink}>
+                            <h3>DC COMICS</h3>
                             <ul>
-                                <li><h3>DC COMICS</h3></li>
                                 <a href=""> <li>Characters</li></a>
                                 <a href=""> <li>Comics</li></a>
                                 <a href=""> <li>Movies</li></a>
@@ -43,15 +43,15 @@ function Footer() {
                                 <a href=""> <li>Videos</li></a>
                                 <a href=""> <li>News</li></a>
                             </ul>
+                            <h3>SHOP</h3>
                             <ul>
-                                <li><h3>SHOP</h3></li>
                                 <a href=""> <li>Shop DC</li></a>
                                 <a href=""> <li>Shop DC Collectibles</li></a>
                             </ul>
                         </div>
                         <div className={style.middleNavLink}>
+                            <h3>DC</h3>
                             <ul>
-                                <li><h3>DC</h3></li>
                                 <a href=""> <li>Term Of Use</li></a>
                                 <a href=""> <li>Privacy policy (new)</li></a>
                                 <a href=""> <li>Ad Choices</li></a>
@@ -66,8 +66,8 @@ function Footer() {
                             </ul>
                         </div>
                         <div className={style.rightNavLink}>
+                            <h3>SITES</h3>
                             <ul>
-                                <li><h3>SITES</h3></li>
                                 <a href=""> <li>DC</li></a>
                                 <a href=""> <li>MAD Magazine</li></a>
                                 <a href=""> <li>DC Kids</li></a>
@@ -84,26 +84,26 @@ function Footer() {
                         <a href="#"><span>SIGN-UP NOW!</span></a>
                     </div>
 
-                    <ul className={style.footerSocial}>
-                        <li>
-                            <h3>FOLLOW US</h3>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./src/assets/footer-facebook.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./src/assets/footer-twitter.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./src/assets/footer-youtube.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./src/assets/footer-pinterest.png" alt="" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="./src/assets/footer-periscope.png" alt="" /></a>
-                        </li>
-                    </ul>
+                    <div className={style.footerSocial}>
+                        <h3>FOLLOW US</h3>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./src/assets/footer-facebook.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./src/assets/footer-twitter.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./src/assets/footer-youtube.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./src/assets/footer-pinterest.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./src/assets/footer-periscope.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </footer >
         </>

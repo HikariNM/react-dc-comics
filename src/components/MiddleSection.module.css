@@ -1,0 +1,32 @@
+.container {
+    background-color: #0282F9;
+}
+
+.shopLink {
+    margin: 0 auto;
+    width: 70%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.shopLink img {
+    width: 50px;
+    object-fit: contain;
+}
+
+.shopLink li:nth-last-child(2) img {
+    width: 35px;
+}
+
+.shopLink li {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.shopLink a {
+    display: flex;
+    align-items: center;
+    color: white;
+}

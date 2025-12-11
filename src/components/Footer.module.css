@@ -1,40 +1,7 @@
-.container {
-    background-color: #0282F9;
-}
-
 footer {
     color: white;
     background-color: #303030;
     margin-bottom: 30px;
-}
-
-/********** FOOTER SHOP ************/
-.shopLink {
-    margin: 0 auto;
-    width: 70%;
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.shopLink img {
-    width: 50px;
-    object-fit: contain;
-}
-
-.shopLink li:nth-last-child(2) img {
-    width: 35px;
-}
-
-.shopLink li {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.shopLink a {
-    display: flex;
-    align-items: center;
-    color: white;
 }
 
 /*************FOOTER NAV*************/
@@ -43,7 +10,7 @@ footer {
 
     background-image: url('./src/assets/footer-bg.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .footerLogo {
@@ -109,6 +76,7 @@ footer {
 
 .footerSocial h3 {
     color: #027ED2;
+    padding-right: 20px;
 }
 
 .footerSocial {
@@ -116,6 +84,10 @@ footer {
     align-items: center;
     width: 35%;
     justify-content: flex-end;
+}
+
+.footerSocial ul {
+    display: flex;
 }
 
 .footerSocial li {
