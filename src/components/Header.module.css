@@ -27,9 +27,13 @@
 .header li {
     font-size: 14px;
     padding: 50px 0;
-    border-bottom: 5px solid transparent;
+    /* border-bottom: 5px solid transparent; */
 }
 
-.header li:hover {
+.active {
     border-bottom: 5px solid #0282F9;
+}
+
+.active a {
+    color: #0282F9;
 }
