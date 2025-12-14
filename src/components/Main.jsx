@@ -16,7 +16,7 @@ function Main() {
                     <div className={style.cardsContainer}>
                         {
                             card.map(card => {
-                                return <div className={style.card}>
+                                return <div className={style.card} key={card.id}>
                                     <img src={card.thumb} alt={card.title} />
                                     <p>{card.series.toUpperCase()}</p>
                                 </div>
