@@ -1,4 +1,5 @@
 import style from './Footer.module.css';
+import navLink from './FooterNavLinks'
 
 function Footer() {
 
@@ -8,48 +9,56 @@ function Footer() {
                 <div className={style.footerNavLinkContainer}>
                     <div className={style.footerLogo}>
                         <div className={style.leftNavLink}>
-                            <h3>DC COMICS</h3>
-                            <ul>
-                                <a href=""> <li>Characters</li></a>
-                                <a href=""> <li>Comics</li></a>
-                                <a href=""> <li>Movies</li></a>
-                                <a href=""> <li>TV</li></a>
-                                <a href=""> <li>Games</li></a>
-                                <a href=""> <li>Videos</li></a>
-                                <a href=""> <li>News</li></a>
-                            </ul>
-                            <h3>SHOP</h3>
-                            <ul>
-                                <a href=""> <li>Shop DC</li></a>
-                                <a href=""> <li>Shop DC Collectibles</li></a>
-                            </ul>
+                            {
+                                navLink.filter(e => e.id === 1 || e.id === 2).map(link => {
+                                    return (<div>
+
+                                        <h3>{link.title}</h3>
+                                        <ul>
+                                            {
+                                                link.item.map((item) => {
+                                                    return <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                                                })
+                                            }
+                                        </ul>
+                                    </div>
+                                    )
+                                })
+                            }
                         </div>
-                        <div className={style.middleNavLink}>
-                            <h3>DC</h3>
-                            <ul>
-                                <a href=""> <li>Term Of Use</li></a>
-                                <a href=""> <li>Privacy policy (new)</li></a>
-                                <a href=""> <li>Ad Choices</li></a>
-                                <a href=""> <li>Adversiting</li></a>
-                                <a href=""> <li>Jobs</li></a>
-                                <a href=""> <li>Subscriptions</li></a>
-                                <a href=""> <li>Talent Workshops</li></a>
-                                <a href=""> <li>CPSC Certificates</li></a>
-                                <a href=""> <li>Ratings</li></a>
-                                <a href=""> <li>Shop Help</li></a>
-                                <a href=""> <li>Contact Us</li></a>
-                            </ul>
-                        </div>
-                        <div className={style.rightNavLink}>
-                            <h3>SITES</h3>
-                            <ul>
-                                <a href=""> <li>DC</li></a>
-                                <a href=""> <li>MAD Magazine</li></a>
-                                <a href=""> <li>DC Kids</li></a>
-                                <a href=""> <li>DC Universe</li></a>
-                                <a href=""> <li>DC Power Visa</li></a>
-                            </ul>
-                        </div>
+
+                        {
+                            navLink.filter(e => e.id === 3).map(link => {
+                                return <div className={style.middleNavLink}>
+                                    <h3>{link.title}</h3>
+                                    <ul>
+                                        {
+                                            link.item.map(item => {
+                                                return <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                                            })
+
+                                        }
+                                    </ul>
+                                </div>
+                            })
+                        }
+
+                        {
+                            navLink.filter(e => e.id === 4).map(link => {
+                                return (<div key={link.id} className={style.rightNavLink}>
+                                    <h3>{link.title}</h3>
+                                    <ul>
+                                        {
+                                            link.item.map(item => {
+                                                return <li key={item.id}><a href={item.url}>{item.text}</a></li>
+                                            })
+                                        }
+                                    </ul>
+                                </div>)
+                            })
+                        }
+
+
 
                     </div>
                 </div>
