@@ -1,95 +1,14 @@
-import style from './Footer.module.css';
-import navLink from './FooterNavLinks'
+import FooterNav from './FooterNav';
+import FooterSocial from './FooterSocial';
 
 function Footer() {
 
     return (
         <>
             <footer>
-                <div className={style.footerNavLinkContainer}>
-                    <div className={style.footerLogo}>
-                        <div className={style.leftNavLink}>
-                            {
-                                navLink.filter(e => e.id === 1 || e.id === 2).map(link => {
-                                    return (<div>
-
-                                        <h3>{link.title}</h3>
-                                        <ul>
-                                            {
-                                                link.item.map((item) => {
-                                                    return <li key={item.id}><a href={item.url}>{item.text}</a></li>
-                                                })
-                                            }
-                                        </ul>
-                                    </div>
-                                    )
-                                })
-                            }
-                        </div>
-
-                        {
-                            navLink.filter(e => e.id === 3).map(link => {
-                                return <div className={style.middleNavLink}>
-                                    <h3>{link.title}</h3>
-                                    <ul>
-                                        {
-                                            link.item.map(item => {
-                                                return <li key={item.id}><a href={item.url}>{item.text}</a></li>
-                                            })
-
-                                        }
-                                    </ul>
-                                </div>
-                            })
-                        }
-
-                        {
-                            navLink.filter(e => e.id === 4).map(link => {
-                                return (<div key={link.id} className={style.rightNavLink}>
-                                    <h3>{link.title}</h3>
-                                    <ul>
-                                        {
-                                            link.item.map(item => {
-                                                return <li key={item.id}><a href={item.url}>{item.text}</a></li>
-                                            })
-                                        }
-                                    </ul>
-                                </div>)
-                            })
-                        }
-
-
-
-                    </div>
-                </div>
-                <div className={style.footerContainer}>
-
-                    <div className={style.LeftColumn}>
-                        <a href="#"><span>SIGN-UP NOW!</span></a>
-                    </div>
-
-                    <div className={style.footerSocial}>
-                        <h3>FOLLOW US</h3>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="./src/assets/footer-facebook.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./src/assets/footer-twitter.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./src/assets/footer-youtube.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./src/assets/footer-pinterest.png" alt="" /></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./src/assets/footer-periscope.png" alt="" /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer >
+                <FooterNav />
+                <FooterSocial />
+            </footer>
         </>
     );
 
