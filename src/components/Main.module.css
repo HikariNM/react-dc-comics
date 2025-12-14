@@ -3,10 +3,71 @@ main {
     background-color: #1C1C1C;
 }
 
-.content {
+
+.container {
     width: 70%;
     margin: 0 auto;
-    height: 120px;
+}
+
+.btn {
+    background-color: #0282F9;
+    font-weight: 600;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: 1.1em;
+}
+
+
+/************************/
+
+.jumboContainer {
+    height: 350px;
+    background-image: url(../assets/jumbotron.jpg);
+    background-repeat: no-repeat;
+}
+
+.pageTitle {
+    position: relative;
+    top: 95%;
+    left: 14%;
+}
+
+
+/************CARD******************/
+
+.cardsContainer {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 1em;
+    justify-content: center;
+}
+
+.card {
+    width: calc((100% - (5 * 1em)) / 6);
+}
+
+.card p {
+    padding-top: 10px
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/*******************************/
+
+
+.loadBtn {
+    width: 200px;
+}
+
+.loadBtn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #0282F9;
 }
