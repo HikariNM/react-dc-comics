@@ -1,5 +1,5 @@
 import style from './Footer.module.css';
-import social from './FooterSocialLinks'
+import social from '../data/FooterSocialLinks'
 
 function FooterSocial() {
 

@@ -9,6 +9,12 @@ main {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .btn {
     background-color: #0282F9;
     font-weight: 600;
@@ -22,49 +28,17 @@ main {
 /************************/
 
 .jumboContainer {
-    height: 350px;
+    height: 500px;
     background-image: url(../assets/jumbotron.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.pageTitle {
-    position: relative;
-    top: 95%;
-    left: 14%;
-}
-
-
-/************CARD******************/
-
-.cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 40px 0;
-    gap: 1em;
-    justify-content: center;
-}
-
-.card {
-    width: calc((100% - (5 * 1em)) / 6);
-}
-
-.card p {
-    padding-top: 10px
-}
-
-.card img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: top;
-}
-
 /*******************************/
-
 
 .loadBtn {
     width: 200px;
+    margin-bottom: 40px;
 }
 
 .loadBtn:hover {

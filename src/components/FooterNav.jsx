@@ -1,5 +1,5 @@
 import style from './Footer.module.css';
-import navLink from './FooterNavLinks'
+import navLink from '../data/FooterNavLinks'
 
 function FooterNav() {
 
@@ -10,7 +10,7 @@ function FooterNav() {
                     <div className={style.leftNavLink}>
                         {
                             navLink.filter(e => e.id === 1 || e.id === 2).map(link => {
-                                return (<div>
+                                return (<div key={link.title}>
 
                                     <h3>{link.title}</h3>
                                     <ul>
@@ -28,7 +28,7 @@ function FooterNav() {
 
                     {
                         navLink.filter(e => e.id === 3).map(link => {
-                            return <div className={style.middleNavLink}>
+                            return <div key={link.title} className={style.middleNavLink}>
                                 <h3>{link.title}</h3>
                                 <ul>
                                     {
@@ -44,7 +44,7 @@ function FooterNav() {
 
                     {
                         navLink.filter(e => e.id === 4).map(link => {
-                            return (<div key={link.id} className={style.rightNavLink}>
+                            return (<div key={link.title} className={style.rightNavLink}>
                                 <h3>{link.title}</h3>
                                 <ul>
                                     {
